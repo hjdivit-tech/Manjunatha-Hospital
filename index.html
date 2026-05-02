@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedCare Hospital | World-Class Healthcare</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header id="navbar">
+        <div class="container nav-inner">
+            <a href="#home" class="nav-logo">
+                <div class="nav-logo-icon">M</div>
+                <span class="nav-logo-text">MedCare</span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="#about">About</a>
+                <a href="#departments">Departments</a>
+                <a href="#doctors">Doctors</a>
+                <a href="#facilities">Facilities</a>
+                <a href="#contact">Contact</a>
+                <a href="#appointment" class="nav-cta">Book Appointment</a>
+            </nav>
+
+            <button class="nav-hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="#about">About</a>
+            <a href="#departments">Departments</a>
+            <a href="#doctors">Doctors</a>
+            <a href="#facilities">Facilities</a>
+            <a href="#contact">Contact</a>
+            <a href="#appointment" class="btn btn-primary">Book Appointment</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-bg">
+                <img src="Assets/hero-bg.png" alt="Hospital Interior">
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <div class="hero-content fade-up">
+                    <h1 class="hero-title">World-Class Care,<br><span>Compassionate Touch.</span></h1>
+                    <p class="hero-text">Experience healthcare reimagined. MedCare Hospital combines cutting-edge
+                        technology with genuine human empathy to provide the best possible outcomes for you.</p>
+                    <div class="hero-btns">
+                        <a href="#appointment" class="btn btn-primary btn-lg">Book an Appointment <i
+                                data-lucide="arrow-right"></i></a>
+                        <a href="tel:1-800-MED-CARE" class="btn btn-outline btn-lg"><i data-lucide="phone"></i>
+                            Emergency Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll to explore</span>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <!-- Emergency Banner -->
+        <section id="emergency" class="section-sm">
+            <div class="container">
+                <div class="emergency-card zoom-in">
+                    <div class="emergency-left">
+                        <div class="emergency-icon">
+                            <i data-lucide="alert-circle"></i>
+                        </div>
+                        <div>
+                            <h2 class="emergency-title">Emergency Cases</h2>
+                            <p class="emergency-desc">Our Emergency Department operates 24/7 with immediate response
+                                capabilities.</p>
+                        </div>
+                    </div>
+                    <a href="tel:1-800-MED-CARE" class="btn btn-red">
+                        <i data-lucide="phone"></i> 1-800-MED-CARE
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="grid-2">
+                    <div class="about-img-wrap fade-left">
+                        <div class="about-img">
+                            <img src="hero-bg.png" alt="Hospital Facility">
+                        </div>
+                        <div class="about-blob1"></div>
+                        <div class="about-blob2"></div>
+                    </div>
+                    <div class="fade-right">
+                        <h2 class="about-title">A Legacy of Clinical Excellence & Human Compassion</h2>
+                        <p class="about-text">At MedCare Hospital, we believe that world-class medicine is only half the
+                            equation. The other half is how we treat you as a human being. Since 1998, we have set the
+                            standard for patient-centered healthcare.</p>
+                        <p class="about-text">Our multidisciplinary teams collaborate in a state-of-the-art facility
+                            designed for healing and tranquility.</p>
+
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <div class="stat-icon"><i data-lucide="building-2"></i></div>
+                                <div>
+                                    <div class="stat-value">25+</div>
+                                    <div class="stat-label">Years of Excellence</div>
+                                </div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-icon"><i data-lucide="users"></i></div>
+                                <div>
+                                    <div class="stat-value">50k+</div>
+                                    <div class="stat-label">Patients Annually</div>
+                                </div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-icon"><i data-lucide="heart-pulse"></i></div>
+                                <div>
+                                    <div class="stat-value">15+</div>
+                                    <div class="stat-label">Specialists</div>
+                                </div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-icon"><i data-lucide="award"></i></div>
+                                <div>
+                                    <div class="stat-value">12</div>
+                                    <div class="stat-label">Global Awards</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Departments Section -->
+        <section id="departments" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title fade-up">Centers of Excellence</h2>
+                    <p class="section-sub fade-up">Equipped with cutting-edge technology and staffed by internationally
+                        recognized experts.</p>
+                </div>
+                <div class="grid-3">
+                    <div class="dept-card fade-up">
+                        <div class="dept-icon icon-rose"><i data-lucide="activity"></i></div>
+                        <h3 class="dept-name">Cardiology</h3>
+                        <p class="dept-desc">Advanced heart care, diagnostics, and interventional procedures.</p>
+                    </div>
+                    <div class="dept-card fade-up">
+                        <div class="dept-icon icon-purple"><i data-lucide="brain"></i></div>
+                        <h3 class="dept-name">Neurology</h3>
+                        <p class="dept-desc">Comprehensive treatment for brain, spine, and nervous system.</p>
+                    </div>
+                    <div class="dept-card fade-up">
+                        <div class="dept-icon icon-amber"><i data-lucide="bone"></i></div>
+                        <h3 class="dept-name">Orthopedics</h3>
+                        <p class="dept-desc">Specialized care for bones, joints, ligaments, and mobility.</p>
+                    </div>
+                    <div class="dept-card fade-up">
+                        <div class="dept-icon icon-sky"><i data-lucide="baby"></i></div>
+                        <h3 class="dept-name">Pediatrics</h3>
+                        <p class="dept-desc">Compassionate, specialized care for infants, children, and teens.</p>
+                    </div>
+                    <div class="dept-card fade-up">
+                        <div class="dept-icon icon-emerald"><i data-lucide="syringe"></i></div>
+                        <h3 class="dept-name">Oncology</h3>
+                        <p class="dept-desc">State-of-the-art cancer treatments and holistic support.</p>
+                    </div>
+                    <div class="dept-card fade-up">
+                        <div class="dept-icon icon-red"><i data-lucide="stethoscope"></i></div>
+                        <h3 class="dept-name">Emergency</h3>
+                        <p class="dept-desc">24/7 rapid response care for critical conditions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Doctors Section -->
+        <section id="doctors" class="section">
+            <div class="container">
+                <div class="doctors-header">
+                    <div>
+                        <h2 class="section-title fade-right">Meet Our Specialists</h2>
+                        <p class="section-sub fade-right" style="margin:0; text-align:left;">Compassionate healers
+                            dedicated to your well-being.</p>
+                    </div>
+                    <a href="#appointment" class="view-all fade-left">View All Doctors <i
+                            data-lucide="arrow-up-right"></i></a>
+                </div>
+                <div class="grid-3">
+                    <div class="doctor-card fade-up">
+                        <img src="doctor-1.png" alt="Dr. Sarah Jenkins">
+                        <div class="doctor-overlay"></div>
+                        <div class="doctor-info">
+                            <div class="doctor-specialty">Head of Cardiology</div>
+                            <h3 class="doctor-name">Dr. Sarah Jenkins</h3>
+                            <div class="doctor-exp">18 Years Experience</div>
+                            <a href="#appointment" class="doctor-cta">Book Consultation <i
+                                    data-lucide="arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="doctor-card fade-up">
+                        <img src="doctor-2.png" alt="Dr. Michael Chen">
+                        <div class="doctor-overlay"></div>
+                        <div class="doctor-info">
+                            <div class="doctor-specialty">Neurological Surgeon</div>
+                            <h3 class="doctor-name">Dr. Michael Chen</h3>
+                            <div class="doctor-exp">22 Years Experience</div>
+                            <a href="#appointment" class="doctor-cta">Book Consultation <i
+                                    data-lucide="arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="doctor-card fade-up">
+                        <img src="doctor-3.png" alt="Dr. Emily Rodriguez">
+                        <div class="doctor-overlay"></div>
+                        <div class="doctor-info">
+                            <div class="doctor-specialty">Senior Pediatrician</div>
+                            <h3 class="doctor-name">Dr. Emily Rodriguez</h3>
+                            <div class="doctor-exp">14 Years Experience</div>
+                            <a href="#appointment" class="doctor-cta">Book Consultation <i
+                                    data-lucide="arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Facilities Section -->
+        <section id="facilities" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title fade-up">World-Class Facilities</h2>
+                    <p class="section-sub fade-up">Infrastructure designed for comprehensive care under one roof.</p>
+                </div>
+                <div class="grid-3">
+                    <div class="facility-item fade-up">
+                        <div class="facility-icon"><i data-lucide="clock"></i></div>
+                        <div>
+                            <h3 class="facility-title">24/7 Care</h3>
+                            <p class="facility-desc">Round-the-clock medical attention and nursing care.</p>
+                        </div>
+                    </div>
+                    <div class="facility-item fade-up">
+                        <div class="facility-icon"><i data-lucide="shield-plus"></i></div>
+                        <div>
+                            <h3 class="facility-title">Advanced ICU</h3>
+                            <p class="facility-desc">State-of-the-art intensive care units with specialized monitoring.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="facility-item fade-up">
+                        <div class="facility-icon"><i data-lucide="beaker"></i></div>
+                        <div>
+                            <h3 class="facility-title">In-house Pharmacy</h3>
+                            <p class="facility-desc">Fully stocked pharmacy available 24/7 for all prescriptions.</p>
+                        </div>
+                    </div>
+                    <div class="facility-item fade-up">
+                        <div class="facility-icon"><i data-lucide="truck"></i></div>
+                        <div>
+                            <h3 class="facility-title">Ambulance Fleet</h3>
+                            <p class="facility-desc">Rapid response ambulance services equipped with life support.</p>
+                        </div>
+                    </div>
+                    <div class="facility-item fade-up">
+                        <div class="facility-icon"><i data-lucide="microscope"></i></div>
+                        <div>
+                            <h3 class="facility-title">Diagnostic Lab</h3>
+                            <p class="facility-desc">Comprehensive pathology and diagnostic laboratory services.</p>
+                        </div>
+                    </div>
+                    <div class="facility-item fade-up">
+                        <div class="facility-icon"><i data-lucide="stethoscope"></i></div>
+                        <div>
+                            <h3 class="facility-title">Radiology</h3>
+                            <p class="facility-desc">Advanced imaging including MRI, CT scan, and digital X-ray.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title fade-up">Stories of Healing</h2>
+                    <p class="section-sub fade-up">Read what our patients and their families have to say.</p>
+                </div>
+                <div class="grid-2">
+                    <div class="testimonial-card fade-left">
+                        <i data-lucide="quote" class="quote-icon"></i>
+                        <p class="testimonial-text">"The level of care my father received was simply outstanding. The
+                            doctors took the time to explain every procedure, and the nursing staff was incredibly
+                            compassionate."</p>
+                        <div>
+                            <div class="testimonial-author">Eleanor Richards</div>
+                            <div class="testimonial-role">Patient Family Member</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card fade-right">
+                        <i data-lucide="quote" class="quote-icon"></i>
+                        <p class="testimonial-text">"From the moment I entered the emergency room, I felt safe. The
+                            efficiency and professionalism of the MedCare team undoubtedly saved my life."</p>
+                        <div>
+                            <div class="testimonial-author">David Chen</div>
+                            <div class="testimonial-role">Cardiology Patient</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Appointment Section -->
+        <section id="appointment" class="section">
+            <div class="appt-bg">
+                <img src="hero-bg.png" alt="Background">
+            </div>
+            <div class="container appt-content">
+                <div class="grid-2">
+                    <div class="fade-left">
+                        <h2 class="appt-title">Request a Consultation</h2>
+                        <p class="appt-text">Take the first step towards better health. Fill out the form, and our
+                            patient care team will reach out to schedule an appointment.</p>
+                        <div class="appt-steps">
+                            <div class="appt-step">
+                                <div class="step-num">1</div>
+                                <div class="step-text">Submit your request details</div>
+                            </div>
+                            <div class="appt-step">
+                                <div class="step-num">2</div>
+                                <div class="step-text">Receive a call from our care team</div>
+                            </div>
+                            <div class="appt-step">
+                                <div class="step-num">3</div>
+                                <div class="step-text">Meet with your specialist</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="appt-form-wrap fade-right">
+                        <form id="appointmentForm">
+                            <div class="form-grid-2">
+                                <div class="form-group">
+                                    <label>Full Name</label>
+                                    <input type="text" id="name" placeholder="John Doe" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Phone Number</label>
+                                    <input type="tel" id="phone" placeholder="(555) 000-0000" required>
+                                </div>
+                            </div>
+                            <div class="form-grid-2">
+                                <div class="form-group">
+                                    <label>Department</label>
+                                    <select id="department" required>
+                                        <option value="">Select Department</option>
+                                        <option value="cardiology">Cardiology</option>
+                                        <option value="neurology">Neurology</option>
+                                        <option value="orthopedics">Orthopedics</option>
+                                        <option value="pediatrics">Pediatrics</option>
+                                        <option value="oncology">Oncology</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Preferred Date</label>
+                                    <input type="date" id="date" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Message (Optional)</label>
+                                <textarea id="message" placeholder="Briefly describe your symptoms..."></textarea>
+                            </div>
+                            <button type="submit" class="btn-submit" id="submitBtn">Request Appointment</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="grid-2">
+                    <div class="contact-info fade-left">
+                        <h2 class="section-title">Get in Touch</h2>
+                        <p class="section-sub" style="margin:0 0 2rem; text-align:left;">We are here for you 24/7.</p>
+
+                        <div class="contact-item">
+                            <div class="contact-icon"><i data-lucide="map-pin"></i></div>
+                            <div>
+                                <h3 class="contact-label">Location</h3>
+                                <p class="contact-val">123 Healthcare Avenue,<br>Medical District, NY 10001</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i data-lucide="phone"></i></div>
+                            <div>
+                                <h3 class="contact-label">Contact Numbers</h3>
+                                <p class="contact-val">Emergency: 1-800-MED-CARE<br>Reception: (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i data-lucide="mail"></i></div>
+                            <div>
+                                <h3 class="contact-label">Email</h3>
+                                <p class="contact-val">info@medcarehospital.com<br>appointments@medcare.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map-placeholder fade-right">
+                        <i data-lucide="map-pin"></i>
+                        <p>Interactive Map Integration</p>
+                        <span>123 Healthcare Avenue, NY</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-logo">
+                        <div class="footer-logo-icon">M</div>
+                        <span class="footer-logo-text">MedCare</span>
+                    </div>
+                    <p class="footer-about">A premium healthcare facility committed to delivering clinical excellence
+                        with genuine human compassion.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i data-lucide="twitter"></i></a>
+                        <a href="#" class="social-link"><i data-lucide="facebook"></i></a>
+                        <a href="#" class="social-link"><i data-lucide="instagram"></i></a>
+                        <a href="#" class="social-link"><i data-lucide="linkedin"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#doctors">Our Doctors</a></li>
+                        <li><a href="#facilities">Facilities</a></li>
+                        <li><a href="#appointment">Book Appointment</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Departments</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Cardiology</a></li>
+                        <li><a href="#">Neurology</a></li>
+                        <li><a href="#">Orthopedics</a></li>
+                        <li><a href="#">Pediatrics</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Newsletter</h4>
+                    <p class="newsletter-text">Subscribe for health tips and updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Email address">
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copy">&copy; 2024 MedCare Hospital. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Emergency FAB -->
+    <a href="tel:1-800-MED-CARE" class="fab">
+        <i data-lucide="phone-call"></i>
+        <div class="fab-pulse"></div>
+        <div class="fab-pulse fab-pulse2"></div>
+    </a>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <div class="toast-title">Appointment Requested</div>
+        <div id="toastDesc" class="toast-desc">We will contact you shortly to confirm.</div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
