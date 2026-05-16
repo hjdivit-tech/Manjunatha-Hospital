@@ -45,39 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 4. Form Submission & Toast
-    const appointmentForm = document.getElementById('appointmentForm');
-    const toast = document.getElementById('toast');
-    const submitBtn = document.getElementById('submitBtn');
-
-    if (appointmentForm) {
-        appointmentForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-
-            const name = document.getElementById('name').value;
-            submitBtn.disabled = true;
-            submitBtn.textContent = 'Processing...';
-
-            // Simulate API call
-            setTimeout(() => {
-                submitBtn.disabled = false;
-                submitBtn.textContent = 'Request Appointment';
-
-                // Show Toast
-                toast.querySelector('#toastDesc').textContent = `Thank you ${name}, we will contact you shortly.`;
-                toast.classList.add('show');
-
-                // Hide Toast after 4s
-                setTimeout(() => {
-                    toast.classList.remove('show');
-                }, 4000);
-
-                appointmentForm.reset();
-            }, 1500);
-        });
-    }
-
-    // 5. Scroll Reveal Animations (manual implementation of AOS)
+    // 4. Scroll Reveal Animations (manual implementation of AOS)
     const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
@@ -94,7 +62,39 @@ document.addEventListener('DOMContentLoaded', () => {
     const animatedElements = document.querySelectorAll('.fade-up, .fade-left, .fade-right, .zoom-in');
     animatedElements.forEach(el => observer.observe(el));
 
-    // 6. Smooth Scroll for all links
+    // 6. Gallery Load More/Less
+    const loadMoreBtn = document.getElementById('loadMoreBtn');
+    if (loadMoreBtn) {
+        loadMoreBtn.addEventListener('click', () => {
+            const hiddenItems = document.querySelectorAll('.hidden-gallery-item');
+            const isExpanding = loadMoreBtn.textContent.includes('Load More');
+
+            if (isExpanding) {
+                hiddenItems.forEach(item => {
+                    item.style.display = 'block';
+                    // Re-observe for fade up animation
+                    setTimeout(() => observer.observe(item), 10);
+                });
+                loadMoreBtn.innerHTML = 'Load Less';
+            } else {
+                hiddenItems.forEach(item => {
+                    item.style.display = 'none';
+                    item.classList.remove('animated'); // reset animation
+                });
+                loadMoreBtn.innerHTML = 'Load More';
+                // Scroll back to gallery section top
+                const gallerySection = document.getElementById('gallery');
+                if (gallerySection) {
+                    window.scrollTo({
+                        top: gallerySection.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        });
+    }
+
+    // 7. Smooth Scroll for all links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             const targetId = this.getAttribute('href');

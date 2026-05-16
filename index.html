@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MedCare Hospital | World-Class Healthcare</title>
+    <title>Manjunatha Hospital</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,12 +16,11 @@
 
 <body>
 
-    <!-- Navbar -->
     <header id="navbar">
-        <div class="container nav-inner">
+        <div class="nav-inner">
             <a href="#home" class="nav-logo">
-                <div class="nav-logo-icon">M</div>
-                <span class="nav-logo-text">MedCare</span>
+                <div class="nav-logo-icon"><img src="Assets/logo.png"></div>
+                <span class="nav-logo-text">Manjunatha Hospital</span>
             </a>
 
             <nav class="nav-links">
@@ -29,8 +28,8 @@
                 <a href="#departments">Departments</a>
                 <a href="#doctors">Doctors</a>
                 <a href="#facilities">Facilities</a>
+                <a href="#gallery">Gallery</a>
                 <a href="#contact">Contact</a>
-                <a href="#appointment" class="nav-cta">Book Appointment</a>
             </nav>
 
             <button class="nav-hamburger" id="hamburger">
@@ -46,8 +45,8 @@
             <a href="#departments">Departments</a>
             <a href="#doctors">Doctors</a>
             <a href="#facilities">Facilities</a>
+            <a href="#gallery">Gallery</a>
             <a href="#contact">Contact</a>
-            <a href="#appointment" class="btn btn-primary">Book Appointment</a>
         </div>
     </header>
 
@@ -64,17 +63,14 @@
                     <p class="hero-text">Experience healthcare reimagined. MedCare Hospital combines cutting-edge
                         technology with genuine human empathy to provide the best possible outcomes for you.</p>
                     <div class="hero-btns">
-                        <a href="#appointment" class="btn btn-primary btn-lg">Book an Appointment <i
+                        <a href="#contact" class="btn btn-primary btn-lg">Get in Touch <i
                                 data-lucide="arrow-right"></i></a>
-                        <a href="tel:1-800-MED-CARE" class="btn btn-outline btn-lg"><i data-lucide="phone"></i>
+                        <a href="tel:08172233999" class="btn btn-outline btn-lg"><i data-lucide="phone"></i>
                             Emergency Contact</a>
                     </div>
                 </div>
             </div>
-            <div class="scroll-indicator">
-                <span>Scroll to explore</span>
-                <div class="scroll-line"></div>
-            </div>
+
         </section>
 
         <!-- Emergency Banner -->
@@ -91,8 +87,8 @@
                                 capabilities.</p>
                         </div>
                     </div>
-                    <a href="tel:1-800-MED-CARE" class="btn btn-red">
-                        <i data-lucide="phone"></i> 1-800-MED-CARE
+                    <a href="tel:08172233999" class="btn btn-red">
+                        <i data-lucide="phone"></i> 08172-233999
                     </a>
                 </div>
             </div>
@@ -104,14 +100,13 @@
                 <div class="grid-2">
                     <div class="about-img-wrap fade-left">
                         <div class="about-img">
-                            <img src="hero-bg.png" alt="Hospital Facility">
+                            <img src="Assets/ICU.webp" alt="Hospital Facility">
                         </div>
-                        <div class="about-blob1"></div>
-                        <div class="about-blob2"></div>
                     </div>
                     <div class="fade-right">
                         <h2 class="about-title">A Legacy of Clinical Excellence & Human Compassion</h2>
-                        <p class="about-text">At MedCare Hospital, we believe that world-class medicine is only half the
+                        <p class="about-text">At Manjunatha Hospital, we believe that world-class medicine is only half
+                            the
                             equation. The other half is how we treat you as a human being. Since 1998, we have set the
                             standard for patient-centered healthcare.</p>
                         <p class="about-text">Our multidisciplinary teams collaborate in a state-of-the-art facility
@@ -121,34 +116,29 @@
                             <div class="stat-item">
                                 <div class="stat-icon"><i data-lucide="building-2"></i></div>
                                 <div>
-                                    <div class="stat-value">25+</div>
+                                    <div class="stat-value">10+</div>
                                     <div class="stat-label">Years of Excellence</div>
                                 </div>
                             </div>
                             <div class="stat-item">
                                 <div class="stat-icon"><i data-lucide="users"></i></div>
                                 <div>
-                                    <div class="stat-value">50k+</div>
+                                    <div class="stat-value">10k+</div>
                                     <div class="stat-label">Patients Annually</div>
                                 </div>
                             </div>
                             <div class="stat-item">
                                 <div class="stat-icon"><i data-lucide="heart-pulse"></i></div>
                                 <div>
-                                    <div class="stat-value">15+</div>
+                                    <div class="stat-value">10+</div>
                                     <div class="stat-label">Specialists</div>
-                                </div>
-                            </div>
-                            <div class="stat-item">
-                                <div class="stat-icon"><i data-lucide="award"></i></div>
-                                <div>
-                                    <div class="stat-value">12</div>
-                                    <div class="stat-label">Global Awards</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            </div>
             </div>
         </section>
 
@@ -160,33 +150,58 @@
                     <p class="section-sub fade-up">Equipped with cutting-edge technology and staffed by internationally
                         recognized experts.</p>
                 </div>
+                <!-- Featured Departments -->
                 <div class="grid-3">
-                    <div class="dept-card fade-up">
-                        <div class="dept-icon icon-rose"><i data-lucide="activity"></i></div>
-                        <h3 class="dept-name">Cardiology</h3>
-                        <p class="dept-desc">Advanced heart care, diagnostics, and interventional procedures.</p>
-                    </div>
-                    <div class="dept-card fade-up">
+                    <div class="dept-card dept-card-featured fade-up">
                         <div class="dept-icon icon-purple"><i data-lucide="brain"></i></div>
                         <h3 class="dept-name">Neurology</h3>
-                        <p class="dept-desc">Comprehensive treatment for brain, spine, and nervous system.</p>
+                        <p class="dept-desc">Comprehensive diagnosis and treatment for all disorders of the nervous
+                            system.</p>
                     </div>
-                    <div class="dept-card fade-up">
+                    <div class="dept-card dept-card-featured fade-up">
+                        <div class="dept-icon icon-purple"><i data-lucide="microscope"></i></div>
+                        <h3 class="dept-name">Neurosurgery</h3>
+                        <p class="dept-desc">Advanced surgical interventions for complex brain, spine, and nerve
+                            conditions.</p>
+                    </div>
+                    <div class="dept-card dept-card-featured fade-up">
+                        <div class="dept-icon icon-purple"><i data-lucide="activity"></i></div>
+                        <h3 class="dept-name">Neuro Rehab</h3>
+                        <p class="dept-desc">Specialized rehabilitation programs for neurological recovery and quality
+                            of life.</p>
+                    </div>
+                </div>
+
+                <!-- Other Departments -->
+                <div class="grid-3" style="margin-top: 2rem;">
+                    <div class="dept-card dept-card-small fade-up">
                         <div class="dept-icon icon-amber"><i data-lucide="bone"></i></div>
-                        <h3 class="dept-name">Orthopedics</h3>
-                        <p class="dept-desc">Specialized care for bones, joints, ligaments, and mobility.</p>
+                        <h3 class="dept-name">Ortho and Trauma 24 x 7</h3>
+                        <p class="dept-desc">Round-the-clock specialized care for bones, joints, and severe trauma
+                            injuries.</p>
                     </div>
-                    <div class="dept-card fade-up">
+                    <div class="dept-card dept-card-small fade-up">
+                        <div class="dept-icon icon-rose"><i data-lucide="scissors"></i></div>
+                        <h3 class="dept-name">General Surgery</h3>
+                        <p class="dept-desc">Expert surgical care covering a wide range of common and complex
+                            procedures.</p>
+                    </div>
+                    <div class="dept-card dept-card-small fade-up">
+                        <div class="dept-icon icon-rose"><i data-lucide="heart-pulse"></i></div>
+                        <h3 class="dept-name">Gynaecology</h3>
+                        <p class="dept-desc">Advanced heart care, diagnostics, and interventional procedures.</p>
+                    </div>
+                    <div class="dept-card dept-card-small fade-up">
                         <div class="dept-icon icon-sky"><i data-lucide="baby"></i></div>
                         <h3 class="dept-name">Pediatrics</h3>
                         <p class="dept-desc">Compassionate, specialized care for infants, children, and teens.</p>
                     </div>
-                    <div class="dept-card fade-up">
+                    <div class="dept-card dept-card-small fade-up">
                         <div class="dept-icon icon-emerald"><i data-lucide="syringe"></i></div>
-                        <h3 class="dept-name">Oncology</h3>
+                        <h3 class="dept-name">Neuro Oncology</h3>
                         <p class="dept-desc">State-of-the-art cancer treatments and holistic support.</p>
                     </div>
-                    <div class="dept-card fade-up">
+                    <div class="dept-card dept-card-small fade-up">
                         <div class="dept-icon icon-red"><i data-lucide="stethoscope"></i></div>
                         <h3 class="dept-name">Emergency</h3>
                         <p class="dept-desc">24/7 rapid response care for critical conditions.</p>
@@ -204,41 +219,60 @@
                         <p class="section-sub fade-right" style="margin:0; text-align:left;">Compassionate healers
                             dedicated to your well-being.</p>
                     </div>
-                    <a href="#appointment" class="view-all fade-left">View All Doctors <i
-                            data-lucide="arrow-up-right"></i></a>
                 </div>
                 <div class="grid-3">
                     <div class="doctor-card fade-up">
-                        <img src="doctor-1.png" alt="Dr. Sarah Jenkins">
+                        <img src="Assets/Dr manjunath.png" alt="Dr. Amogh Gowda">
                         <div class="doctor-overlay"></div>
                         <div class="doctor-info">
-                            <div class="doctor-specialty">Head of Cardiology</div>
-                            <h3 class="doctor-name">Dr. Sarah Jenkins</h3>
-                            <div class="doctor-exp">18 Years Experience</div>
-                            <a href="#appointment" class="doctor-cta">Book Consultation <i
-                                    data-lucide="arrow-up-right"></i></a>
+                            <div class="doctor-specialty">General Surgeon</div>
+                            <h3 class="doctor-name">Dr. Manjunath</h3>
+                            <div class="doctor-exp">30+ Years Experience</div>
                         </div>
                     </div>
                     <div class="doctor-card fade-up">
-                        <img src="doctor-2.png" alt="Dr. Michael Chen">
+                        <img src="Assets/dr amogh.png" alt="Dr. Kshitija">
                         <div class="doctor-overlay"></div>
                         <div class="doctor-info">
-                            <div class="doctor-specialty">Neurological Surgeon</div>
-                            <h3 class="doctor-name">Dr. Michael Chen</h3>
-                            <div class="doctor-exp">22 Years Experience</div>
-                            <a href="#appointment" class="doctor-cta">Book Consultation <i
-                                    data-lucide="arrow-up-right"></i></a>
+                            <div class="doctor-specialty">Neuro Surgeon</div>
+                            <h3 class="doctor-name">Dr. Amogh Gowda</h3>
+                            <div class="doctor-exp">7+ Years Experience</div>
                         </div>
                     </div>
                     <div class="doctor-card fade-up">
-                        <img src="doctor-3.png" alt="Dr. Emily Rodriguez">
+                        <img src="Assets/Dr ksitija.jpeg" alt="DR.MANOJ KUMAR B K">
                         <div class="doctor-overlay"></div>
                         <div class="doctor-info">
-                            <div class="doctor-specialty">Senior Pediatrician</div>
-                            <h3 class="doctor-name">Dr. Emily Rodriguez</h3>
-                            <div class="doctor-exp">14 Years Experience</div>
-                            <a href="#appointment" class="doctor-cta">Book Consultation <i
-                                    data-lucide="arrow-up-right"></i></a>
+                            <div class="doctor-specialty">Neuro Surgeon</div>
+                            <h3 class="doctor-name">Dr. Kshitija</h3>
+                            <div class="doctor-exp">7+ Years Experience</div>
+                        </div>
+                    </div>
+                    <div class="doctor-card fade-up">
+                        <img src="Assets/Dr Suhas.png" alt="DR.MANOJ KUMAR B K">
+                        <div class="doctor-overlay"></div>
+                        <div class="doctor-info">
+                            <div class="doctor-specialty">Consultant Anaesthesiologist</div>
+                            <h3 class="doctor-name">Dr. Suhas BM</h3>
+                            <div class="doctor-exp">5+ Years Experience</div>
+                        </div>
+                    </div>
+                    <div class="doctor-card fade-up">
+                        <img src="Assets/dr manoj.png" alt="DR.MANOJ KUMAR B K">
+                        <div class="doctor-overlay"></div>
+                        <div class="doctor-info">
+                            <div class="doctor-specialty">GENERAL MEDICINE</div>
+                            <h3 class="doctor-name">Dr. Manoj Kumar B K</h3>
+                            <div class="doctor-exp">5+ Years Experience</div>
+                        </div>
+                    </div>
+                    <div class="doctor-card fade-up">
+                        <img src="Assets/Dr Naveen K Gowda.png" alt="DR.MANOJ KUMAR B K">
+                        <div class="doctor-overlay"></div>
+                        <div class="doctor-info">
+                            <div class="doctor-specialty">Arthroscopy & Sports Medicine</div>
+                            <h3 class="doctor-name">Dr. Naveen K Gowda</h3>
+                            <div class="doctor-exp">5+ Years Experience</div>
                         </div>
                     </div>
                 </div>
@@ -300,99 +334,60 @@
             </div>
         </section>
 
-        <!-- Testimonials Section -->
-        <section id="testimonials" class="section">
+        <!-- Gallery Section -->
+        <section id="gallery" class="section">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title fade-up">Stories of Healing</h2>
-                    <p class="section-sub fade-up">Read what our patients and their families have to say.</p>
+                    <h2 class="section-title fade-up">Our Gallery</h2>
+                    <p class="section-sub fade-up">A glimpse into our world-class infrastructure and care.</p>
                 </div>
-                <div class="grid-2">
-                    <div class="testimonial-card fade-left">
-                        <i data-lucide="quote" class="quote-icon"></i>
-                        <p class="testimonial-text">"The level of care my father received was simply outstanding. The
-                            doctors took the time to explain every procedure, and the nursing staff was incredibly
-                            compassionate."</p>
-                        <div>
-                            <div class="testimonial-author">Eleanor Richards</div>
-                            <div class="testimonial-role">Patient Family Member</div>
-                        </div>
+                <div class="gallery-grid" id="galleryGrid">
+                    <div class="gallery-item fade-up"><img src="Assets/Gallery/reception.png" alt="Gallery Image 1">
+                        <div class="gallery-caption">Reception</div>
                     </div>
-                    <div class="testimonial-card fade-right">
-                        <i data-lucide="quote" class="quote-icon"></i>
-                        <p class="testimonial-text">"From the moment I entered the emergency room, I felt safe. The
-                            efficiency and professionalism of the MedCare team undoubtedly saved my life."</p>
-                        <div>
-                            <div class="testimonial-author">David Chen</div>
-                            <div class="testimonial-role">Cardiology Patient</div>
-                        </div>
+                    <div class="gallery-item fade-up"><img src="Assets/Gallery/op theatre.jpg" alt="Gallery Image 2">
+                        <div class="gallery-caption">Operation Theatre</div>
+                    </div>
+                    <div class="gallery-item fade-up"><img src="Assets/Gallery/ct scan.png" alt="Gallery Image 3">
+                        <div class="gallery-caption">CT Machine</div>
+                    </div>
+                    <div class="gallery-item fade-up"><img src="Assets/Gallery/1.png" alt="Gallery Image 4">
+                        <div class="gallery-caption">X-Ray Machine</div>
+                    </div>
+                    <div class="gallery-item fade-up"><img src="Assets/Gallery/lab.png" alt="Gallery Image 5">
+                        <div class="gallery-caption">Laboratory</div>
+                    </div>
+                    <div class="gallery-item fade-up"><img src="Assets/Gallery/ward 2.png" alt="Gallery Image 6">
+                        <div class="gallery-caption">Emergency Room</div>
+                    </div>
+                    <div class="gallery-item fade-up hidden-gallery-item"><img src="Assets/Gallery/medicals.png"
+                            alt="Gallery Image 7">
+                        <div class="gallery-caption">Medical Store</div>
+                    </div>
+                    <div class="gallery-item fade-up hidden-gallery-item"><img src="Assets/Gallery/7.png"
+                            alt="Gallery Image 8">
+                        <div class="gallery-caption">X Ray Machine</div>
+                    </div>
+                    <div class="gallery-item fade-up hidden-gallery-item"><img src="Assets/Gallery/8.png"
+                            alt="Gallery Image 9">
+                        <div class="gallery-caption">Gallery Image 9</div>
+                    </div>
+                    <div class="gallery-item fade-up hidden-gallery-item"><img src="Assets/Gallery/6.png"
+                            alt="Gallery Image 9">
+                        <div class="gallery-caption">Gallery Image 9</div>
+                    </div>
+                    <div class="gallery-item fade-up hidden-gallery-item"><img src="Assets/Gallery/5.png"
+                            alt="Gallery Image 9">
+                        <div class="gallery-caption">Gallery Image 9</div>
+                    </div>
+                    <div class="gallery-item fade-up hidden-gallery-item"><img src="Assets/Gallery/ward.png"
+                            alt="Gallery Image 9">
+                        <div class="gallery-caption">Gallery Image 9</div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- Appointment Section -->
-        <section id="appointment" class="section">
-            <div class="appt-bg">
-                <img src="hero-bg.png" alt="Background">
-            </div>
-            <div class="container appt-content">
-                <div class="grid-2">
-                    <div class="fade-left">
-                        <h2 class="appt-title">Request a Consultation</h2>
-                        <p class="appt-text">Take the first step towards better health. Fill out the form, and our
-                            patient care team will reach out to schedule an appointment.</p>
-                        <div class="appt-steps">
-                            <div class="appt-step">
-                                <div class="step-num">1</div>
-                                <div class="step-text">Submit your request details</div>
-                            </div>
-                            <div class="appt-step">
-                                <div class="step-num">2</div>
-                                <div class="step-text">Receive a call from our care team</div>
-                            </div>
-                            <div class="appt-step">
-                                <div class="step-num">3</div>
-                                <div class="step-text">Meet with your specialist</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="appt-form-wrap fade-right">
-                        <form id="appointmentForm">
-                            <div class="form-grid-2">
-                                <div class="form-group">
-                                    <label>Full Name</label>
-                                    <input type="text" id="name" placeholder="John Doe" required>
-                                </div>
-                                <div class="form-group">
-                                    <label>Phone Number</label>
-                                    <input type="tel" id="phone" placeholder="(555) 000-0000" required>
-                                </div>
-                            </div>
-                            <div class="form-grid-2">
-                                <div class="form-group">
-                                    <label>Department</label>
-                                    <select id="department" required>
-                                        <option value="">Select Department</option>
-                                        <option value="cardiology">Cardiology</option>
-                                        <option value="neurology">Neurology</option>
-                                        <option value="orthopedics">Orthopedics</option>
-                                        <option value="pediatrics">Pediatrics</option>
-                                        <option value="oncology">Oncology</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label>Preferred Date</label>
-                                    <input type="date" id="date" required>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label>Message (Optional)</label>
-                                <textarea id="message" placeholder="Briefly describe your symptoms..."></textarea>
-                            </div>
-                            <button type="submit" class="btn-submit" id="submitBtn">Request Appointment</button>
-                        </form>
-                    </div>
+                <div class="text-center" style="margin-top: 3rem;">
+                    <button class="btn btn-outline" id="loadMoreBtn"
+                        style="color: var(--primary); border-color: var(--primary);">Load More</button>
                 </div>
             </div>
         </section>
@@ -409,28 +404,45 @@
                             <div class="contact-icon"><i data-lucide="map-pin"></i></div>
                             <div>
                                 <h3 class="contact-label">Location</h3>
-                                <p class="contact-val">123 Healthcare Avenue,<br>Medical District, NY 10001</p>
+                                <p class="contact-val">Shankarmutt Road, K R Puram,<br>Hassan-573201</p>
                             </div>
                         </div>
                         <div class="contact-item">
                             <div class="contact-icon"><i data-lucide="phone"></i></div>
                             <div>
                                 <h3 class="contact-label">Contact Numbers</h3>
-                                <p class="contact-val">Emergency: 1-800-MED-CARE<br>Reception: (555) 123-4567</p>
+                                <p class="contact-val">Emergency: 08172-233999<br>Phone Number: +91-9731999514</p>
                             </div>
                         </div>
                         <div class="contact-item">
                             <div class="contact-icon"><i data-lucide="mail"></i></div>
                             <div>
                                 <h3 class="contact-label">Email</h3>
-                                <p class="contact-val">info@medcarehospital.com<br>appointments@medcare.com</p>
+                                <p class="contact-val">manjunathahospital@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon" style="background: #e8faf0; color: #25D366;"><i
+                                    data-lucide="message-circle"></i></div>
+                            <div>
+                                <h3 class="contact-label">WhatsApp</h3>
+                                <p class="contact-val" style="margin-top: 0.5rem;">
+                                    <a href="https://wa.me/919731999514" target="_blank" class="btn"
+                                        style="background-color: #25D366; color: white; border-radius: 50px; padding: 0.6rem 1.5rem; display: inline-flex; align-items: center; text-decoration: none; font-weight: 600; border: none;">
+                                        Chat with us
+                                    </a>
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="map-placeholder fade-right">
-                        <i data-lucide="map-pin"></i>
-                        <p>Interactive Map Integration</p>
-                        <span>123 Healthcare Avenue, NY</span>
+                    <div class="map-container fade-right"
+                        style="border-radius: var(--radius-2xl); overflow: hidden; height: 100%; min-height: 400px; box-shadow: 0 20px 60px rgba(0, 0, 0, .12);">
+                        <!-- Google Maps Embed Link -->
+                        <iframe
+                            src="https://maps.google.com/maps?q=13.0036061,76.1065023(Manjunatha+Hospital)&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                            width="100%" height="100%" style="border:0; min-height: 400px;" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
                     </div>
                 </div>
             </div>
@@ -441,18 +453,11 @@
         <div class="container">
             <div class="footer-grid">
                 <div>
-                    <div class="footer-logo">
-                        <div class="footer-logo-icon">M</div>
-                        <span class="footer-logo-text">MedCare</span>
+                    <div class="footer-logo" style="margin-bottom: 1rem;">
+                        <span class="footer-logo-text">Manjunatha Hospital</span>
                     </div>
-                    <p class="footer-about">A premium healthcare facility committed to delivering clinical excellence
-                        with genuine human compassion.</p>
-                    <div class="social-links">
-                        <a href="#" class="social-link"><i data-lucide="twitter"></i></a>
-                        <a href="#" class="social-link"><i data-lucide="facebook"></i></a>
-                        <a href="#" class="social-link"><i data-lucide="instagram"></i></a>
-                        <a href="#" class="social-link"><i data-lucide="linkedin"></i></a>
-                    </div>
+                    <p class="footer-about">A trusted multi-speciality hospital in Hassan, delivering compassionate and
+                        comprehensive healthcare with cutting-edge technology.</p>
                 </div>
                 <div>
                     <h4 class="footer-heading">Quick Links</h4>
@@ -460,49 +465,40 @@
                         <li><a href="#about">About Us</a></li>
                         <li><a href="#doctors">Our Doctors</a></li>
                         <li><a href="#facilities">Facilities</a></li>
-                        <li><a href="#appointment">Book Appointment</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="footer-heading">Departments</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Cardiology</a></li>
-                        <li><a href="#">Neurology</a></li>
-                        <li><a href="#">Orthopedics</a></li>
-                        <li><a href="#">Pediatrics</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="footer-heading">Newsletter</h4>
-                    <p class="newsletter-text">Subscribe for health tips and updates.</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Email address">
-                        <button type="submit">Send</button>
-                    </form>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p class="footer-copy">&copy; 2024 MedCare Hospital. All rights reserved.</p>
-                <div class="footer-legal">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
+                    <h4 class="footer-heading">Follow Us</h4>
+                    <div class="footer-social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=61589783336776"
+                            class="footer-brand-link footer-brand-fb" target="_blank" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M24 12.073C24 5.404 18.627 0 12 0S0 5.404 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.93-1.956 1.886v2.286h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/manjunathahospitalhsn/"
+                            class="footer-brand-link footer-brand-ig" target="_blank" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
 
     <!-- Emergency FAB -->
-    <a href="tel:1-800-MED-CARE" class="fab">
+    <a href="tel:08172233999" class="fab">
         <i data-lucide="phone-call"></i>
         <div class="fab-pulse"></div>
         <div class="fab-pulse fab-pulse2"></div>
     </a>
 
-    <!-- Toast Notification -->
-    <div id="toast" class="toast">
-        <div class="toast-title">Appointment Requested</div>
-        <div id="toastDesc" class="toast-desc">We will contact you shortly to confirm.</div>
-    </div>
 
     <!-- Scripts -->
     <script src="https://unpkg.com/lucide@latest"></script>
