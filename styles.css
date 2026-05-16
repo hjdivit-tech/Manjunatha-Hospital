@@ -244,7 +244,8 @@ button {
 .nav-logo {
     display: flex;
     align-items: center;
-    gap: .6rem
+    gap: .6rem;
+    margin-left: -1.2rem;
 }
 
 .nav-logo-icon {
@@ -1725,6 +1726,14 @@ footer {
 
     .nav-hamburger {
         display: flex
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mobile-hidden {
+        display: none;
     }
 
     .emergency-card {

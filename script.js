@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const loadMoreBtn = document.getElementById('loadMoreBtn');
     if (loadMoreBtn) {
         loadMoreBtn.addEventListener('click', () => {
-            const hiddenItems = document.querySelectorAll('.hidden-gallery-item');
+            const hiddenItems = document.querySelectorAll('.hidden-gallery-item, .mobile-hidden');
             const isExpanding = loadMoreBtn.textContent.includes('Load More');
 
             if (isExpanding) {
@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 loadMoreBtn.innerHTML = 'Load Less';
             } else {
                 hiddenItems.forEach(item => {
-                    item.style.display = 'none';
+                    item.style.display = '';
                     item.classList.remove('animated'); // reset animation
                 });
                 loadMoreBtn.innerHTML = 'Load More';
